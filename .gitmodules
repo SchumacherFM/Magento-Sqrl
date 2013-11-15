@@ -1,0 +1,3 @@
+[submodule "src/js/sesame/adminhtml/qrcodejs"]
+	path = src/js/sesame/adminhtml/qrcodejs
+	url = git@github.com:davidshimjs/qrcodejs.git
