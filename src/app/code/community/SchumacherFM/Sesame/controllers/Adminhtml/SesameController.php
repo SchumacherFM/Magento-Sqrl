@@ -9,7 +9,7 @@
 class SchumacherFM_Sesame_Adminhtml_SesameController extends Mage_Adminhtml_Controller_Action
 {
     /**
-     *
+     * @see Mage_Adminhtml_IndexController::forgotpassword action
      * @return void
      */
     public function loginAction()
@@ -17,8 +17,7 @@ class SchumacherFM_Sesame_Adminhtml_SesameController extends Mage_Adminhtml_Cont
         Zend_Debug::dump($_REQUEST);
         exit;
 
-        $this->loadLayout();
-        $this->renderLayout();
+        //
     }
 
     /**
@@ -29,6 +28,7 @@ class SchumacherFM_Sesame_Adminhtml_SesameController extends Mage_Adminhtml_Cont
         $token = $this->getRequest()->getParam('token', '');
         Zend_Debug::dump($_REQUEST);
         exit;
+        $this->getResponse()->setBody($html);
     }
 
     /**
