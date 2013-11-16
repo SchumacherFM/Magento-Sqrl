@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    SchumacherFM_Sesame
+ * @package     Helper
+ * @author      Cyrill at Schumacher dot fm / @SchumacherFM
+ * @copyright   Copyright (c)
+ * @license     The MIT License (MIT)
+ */
+-->
+<config>
+    <sections>
+        <system>
+            <groups>
+                <magesesame translate="label">
+                    <label>Sesame - Automatic page load progress bar for the backend</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <sesame_theme translate="label">
+                            <label>Theme</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>magesesame/config_source_themefiles</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sesame_theme>
+                        <custom_css translate="label">
+                            <label>Custom CSS</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>With this custom CSS you can modify the default sesame themes.
+                            E.g.: for each store view a different color.</comment>
+                        </custom_css>
+                    </fields>
+                </magesesame>
+            </groups>
+        </system>
+    </sections>
+</config>

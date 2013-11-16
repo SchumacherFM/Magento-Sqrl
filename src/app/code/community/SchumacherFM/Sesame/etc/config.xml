@@ -1,0 +1,115 @@
+<?xml version="1.0"?><!--
+/**
+ * @category    SchumacherFM_Sesame
+ * @package     Helper
+ * @author      Cyrill at Schumacher dot fm / @SchumacherFM
+ * @copyright   Copyright (c)
+ * @license     The MIT License (MIT)
+ */
+-->
+<config>
+    <modules>
+        <SchumacherFM_Sesame>
+            <version>1.0.0</version>
+        </SchumacherFM_Sesame>
+    </modules>
+
+    <global>
+        <blocks>
+            <sesame>
+                <class>SchumacherFM_Sesame_Block</class>
+            </sesame>
+        </blocks>
+        <models>
+            <sesame>
+                <class>SchumacherFM_Sesame_Model</class>
+            </sesame>
+        </models>
+        <helpers>
+            <sesame>
+                <class>SchumacherFM_Sesame_Helper</class>
+            </sesame>
+        </helpers>
+    </global>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <sesame before="Mage_Adminhtml">SchumacherFM_Sesame_Adminhtml</sesame>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <sesame>
+                    <file>sesame.xml</file>
+                </sesame>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <SchumacherFM_Sesame>
+                    <files>
+                        <default>SchumacherFM_Sesame.csv</default>
+                    </files>
+                </SchumacherFM_Sesame>
+            </modules>
+        </translate>
+        <events>
+
+            <!--<adminhtml_block_html_before>-->
+            <!--<observers>-->
+            <!--<schumacherfm_sesame_system_account>-->
+            <!--<class>sesame/observer_systemAccount</class>-->
+            <!--<method>injectSesameForm</method>-->
+            <!--</schumacherfm_sesame_system_account>-->
+            <!--</observers>-->
+            <!--</adminhtml_block_html_before>-->
+        </events>
+    </adminhtml>
+
+    <frontend>
+        <routers>
+            <sesame>
+                <use>standard</use>
+                <args>
+                    <module>SchumacherFM_Sesame</module>
+                    <frontName>sesame</frontName>
+                </args>
+            </sesame>
+        </routers>
+        <translate>
+            <modules>
+                <SchumacherFM_Sesame>
+                    <files>
+                        <default>SchumacherFM_Sesame.csv</default>
+                    </files>
+                </SchumacherFM_Sesame>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <sesame module="SchumacherFM_Sesame">
+                    <file>sesame.xml</file>
+                </sesame>
+            </updates>
+        </layout>
+        <secure_url>
+            <sesame>/sesame/</sesame>
+        </secure_url>
+    </frontend>
+
+    <default>
+        <!--<system>-->
+        <!--<sesame>-->
+        <!--<sesame_theme>sesame-theme-flat-top.css</sesame_theme>-->
+        <!--</sesame>-->
+        <!--</system>-->
+    </default>
+</config>
