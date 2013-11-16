@@ -6,20 +6,29 @@
  * @copyright   Copyright (c)
  * @license     The MIT License (MIT)
  */
-class SchumacherFM_Sesame_Adminhtml_LoginController extends Mage_Adminhtml_Controller_Action
+class SchumacherFM_Sesame_Adminhtml_SesameController extends Mage_Adminhtml_Controller_Action
 {
     /**
-     * key list
      *
      * @return void
      */
-    public function indexAction()
+    public function loginAction()
     {
-        $this->_title($this->__('System'))->_title($this->__('Sesame Keys'));
+        Zend_Debug::dump($_REQUEST);
+        exit;
 
         $this->loadLayout();
-        $this->_setActiveMenu('system/sesame');
         $this->renderLayout();
+    }
+
+    /**
+     * ajax requests per second
+     */
+    public function checkAction()
+    {
+        $token = $this->getRequest()->getParam('token', '');
+        Zend_Debug::dump($_REQUEST);
+        exit;
     }
 
     /**

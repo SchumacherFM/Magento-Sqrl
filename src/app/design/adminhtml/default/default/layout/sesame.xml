@@ -2,9 +2,7 @@
 <layout>
     <adminhtml_index_login>
         <reference name="form.additional.info">
-
-            <block type="sesame/adminhtml_token" name="adminhtml.sesame.token"/>
-
+            <block type="sesame/adminhtml_token" name="adminhtml.sesame.token" template="sesame/login.phtml"/>
         </reference>
     </adminhtml_index_login>
 
