@@ -1,0 +1,11 @@
+<?php
+/** @var $this SchumacherFM_Sqrl_Block_Adminhtml_Token */
+$baseJsUrl = $this->getSqrlJsBaseUrl();
+?>
+
+<script async="true" type="text/javascript" src="<?php echo $baseJsUrl; ?>qrcodejs/qrcode.min.js"></script>
+<script async="true" type="text/javascript" src="<?php echo $baseJsUrl; ?>sqrl.js"></script>
+
+<a href="#" id="sqrlLogin" data-params='<?php echo $this->getLoginParamJson(); ?>'>
+    <?php echo Mage::helper('sqrl')->__('Secure login via SQRL-Code'); ?>
+</a>
