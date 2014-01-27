@@ -1,7 +1,7 @@
-src/js/sesame js/sesame
-src/app/locale/en_US/SchumacherFM_Sesame.csv app/locale/en_US/SchumacherFM_Sesame.csv
-src/app/locale/de_DE/SchumacherFM_Sesame.csv app/locale/de_DE/SchumacherFM_Sesame.csv
-src/app/etc/modules/SchumacherFM_Sesame.xml app/etc/modules/SchumacherFM_Sesame.xml
-src/app/design/adminhtml/default/default/layout/sesame.xml app/design/adminhtml/default/default/layout/sesame.xml
-src/app/code/community/SchumacherFM/Sesame app/code/community/SchumacherFM/Sesame
-src/app/design/adminhtml/default/default/template/sesame app/design/adminhtml/default/default/template/sesame
+src/js/sqrl js/sqrl
+src/app/locale/en_US/SchumacherFM_Sqrl.csv app/locale/en_US/SchumacherFM_Sqrl.csv
+src/app/locale/de_DE/SchumacherFM_Sqrl.csv app/locale/de_DE/SchumacherFM_Sqrl.csv
+src/app/etc/modules/SchumacherFM_Sqrl.xml app/etc/modules/SchumacherFM_Sqrl.xml
+src/app/design/adminhtml/default/default/layout/sqrl.xml app/design/adminhtml/default/default/layout/sqrl.xml
+src/app/code/community/SchumacherFM/Sqrl app/code/community/SchumacherFM/Sqrl
+src/app/design/adminhtml/default/default/template/sqrl app/design/adminhtml/default/default/template/sqrl

@@ -1,0 +1,16 @@
+{
+    "name": "schumacherfm/magento-sqrl",
+    "type": "magento-module",
+    "license": "MIT",
+    "homepage": "https://github.com/SchumacherFM/Magento-Sqrl",
+    "description": "Magento Backend and Frontend Login via SQRL",
+    "authors": [
+        {
+            "name": "Cyrill Schumacher",
+            "email": "cyrill@schumacher.fm"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
